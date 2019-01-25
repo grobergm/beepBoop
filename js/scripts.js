@@ -6,15 +6,13 @@ function roboLooper(number){
     numberArray.push(i.toString())
   }
   numberArray.forEach(function(number){
-    for (var j=0;j<number.length;j++){
-      if (number[j]==="3"){
-        number = "Sorry Dave";
-      }
+    if(number.includes("3")){
+      toTextArray.push("Sorry Dave");
     }
-    toTextArray.push(number);
-    console.log(toTextArray);
-  })
 
+
+  })
+console.log(toTextArray);
 }
 
 roboLooper(33);
