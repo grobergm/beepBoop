@@ -28,6 +28,7 @@ $(document).ready(function(){
   $("form#numberInputForm").submit(function(event){
     event.preventDefault();
     var userInput = $("input#numberInput").val();
-
+    var beepBoopOutput = roboLooper(userInput);
+    $("p#returnOutput").text(beepBoopOutput);
   })
 });
