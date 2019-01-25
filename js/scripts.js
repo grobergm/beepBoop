@@ -19,8 +19,12 @@ function roboLooper(number){
 return toTextArray;
 }
 
-console.log(roboLooper(50));
 
 
 $(document).ready(function(){
+  $("form#numberInputForm").submit(function(event){
+    event.preventDefault();
+    var userInput = $("input#numberInput").val();
+    console.log(userInput);
+  })
 });
