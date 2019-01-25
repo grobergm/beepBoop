@@ -15,13 +15,30 @@
   <body>
     <div class="jumbotron">
       <h1 class="display-3"><em>Beep-Boop</em></h1>
-      <form id="numberInputForm">
-        <div class="form-group">
-          <label for="numberInput">Enter a number:</label>
-          <input class="form-control" type="number" id="numberInput" placeholder='Please enter a number here:'>
-          <button class="btn btn-lg btn-success" type="submit">Submit</button>
-        </div>
-      </form>
+      <div class="terminalDisplay">
+        <form id="userNameForm">
+          <div class="form-row">
+            <div class="col">
+              <input class="form-control" type="text" placeholder="Please Login with your name to get started">
+            </div>
+            <div class="col">
+              <button class="btn btn-lg btn-danger btn-block" type="submit">Enter</button>
+            </div>
+          </div>
+        </form>
+        <form id="numberInputForm">
+          <div class="form-row">
+            <div class="col">
+              <input class="form-control" type="number" id="numberInput" placeholder='Please enter a number here:'>
+            </div>
+            <div class="col">
+              <button class="btn btn-lg btn-danger btn-block" type="submit">Enter</button>
+            </div>
+          </div>
+        </form>
+        <p id="firstMessage">Working... Processing your input of </p>
+        <p id="secondMessage">Working</p>
+      </div>
       <hr>
       <div id="printout">
         <p id="computer message">Number Accepted</p><hr>
