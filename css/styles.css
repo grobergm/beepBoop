@@ -13,14 +13,14 @@ h1{
 }
 
 #printout{
+  display:none;
   padding:20px;
   background-color:#e1e3dd;
-  display:none;
   font-family: 'courier new';
+  overflow-x: visible;
 }
 
 hr#printer{
-  margin:0px;
   border:5px dashed black;
 }
 

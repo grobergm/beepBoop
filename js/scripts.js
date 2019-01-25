@@ -45,11 +45,12 @@ $(document).ready(function(){
     $("#computerMessages").hide();
     event.preventDefault();
     var numberInput = $("input#numberInput").val();
+    if(numberInput){
     var beepBoopOutput = roboLooper(numberInput);
     $(".numberGoesHere").text(numberInput);
     $("#returnOutput").text(beepBoopOutput);
     $("#computerMessages").slideDown(4000);
     $("#printout").delay(4000).slideDown(4000);
-
+    }
   })
 });
