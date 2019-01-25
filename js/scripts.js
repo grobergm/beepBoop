@@ -4,8 +4,15 @@ function roboLooper(number){
   var realNumber= parseInt(number);
   var numberArray=[];
   var toTextArray=[];
-  for (var i=0;i<=realNumber;i++){
-    numberArray.push(i.toString());
+  if (realNumber>=0){
+    for (var i=0;i<=realNumber;i++){
+      numberArray.push(i.toString());
+    }
+  }
+  if (realNumber<0){
+    for (var i=0;i>=realNumber;i--){
+      numberArray.push(i.toString());
+    }
   }
   numberArray.forEach(function(number){
     if(number.includes("3")){
@@ -42,7 +49,7 @@ $(document).ready(function(){
     $(".numberGoesHere").text(numberInput);
     $("#returnOutput").text(beepBoopOutput);
     $("#computerMessages").slideDown(4000);
-    $("#printout").delay(4000).slideDown(8000);
+    $("#printout").delay(4000).slideDown(4000);
 
   })
 });
