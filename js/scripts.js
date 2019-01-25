@@ -3,7 +3,7 @@ function roboLooper(number){
   var numberArray=[];
   var toTextArray=[];
   for (var i=0;i<=number;i++){
-    numberArray.push(i.toString())
+    numberArray.push(i);
   }
   numberArray.forEach(function(number){
     if(number.includes("3")){
