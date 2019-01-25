@@ -17,7 +17,8 @@ function roboLooper(number){
       toTextArray.push(number);
     }
   })
-return toTextArray;
+var outputText = toTextArray.join(" ");
+return outputText;
 }
 
 console.log(roboLooper("15"));
@@ -27,6 +28,6 @@ $(document).ready(function(){
   $("form#numberInputForm").submit(function(event){
     event.preventDefault();
     var userInput = $("input#numberInput").val();
-    console.log(userInput);
+
   })
 });
