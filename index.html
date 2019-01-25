@@ -15,7 +15,7 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h1 class="display-1">Super-Computer</h1>
+        <h1 class="display-3">Super-Computer</h1>
           <div class="terminalDisplay">
             <p id="greeting">Hello <span class="nameGoesHere">Please login to continue</span>!</p>
             <form id="userNameForm">
@@ -31,7 +31,7 @@
             <form id="numberInputForm">
               <div class="form-row">
                 <div class="col">
-                  <input class="form-control" type="number" id="numberInput" placeholder='Please enter a number here:'>
+                  <input class="form-control" type="number" id="numberInput" placeholder='Please enter a number here:' min="-10000" max="10000">
                 </div>
                 <div class="col">
                   <button class="btn btn-lg btn-danger btn-block" type="submit">Enter</button>
@@ -41,7 +41,7 @@
             <div id="computerMessages">
               <p>Thanks for entering <span class="numberGoesHere"></span>, <span class="nameGoesHere"></span></p>
               <p>Initiating roboLooper program...</p>
-              <p>Pusing all valuse between 0 and <span class="numberGoesHere"></span> into an array...</p>
+              <p>Pushing all values between 0 and <span class="numberGoesHere"></span> into an array...</p>
               <p>Testing if any of those numbers contain 3</p>
               <p>ERROR! I'm Sorry <span class="nameGoesHere"></span>, I'm afraid I can't do that.</p>
               <p>Testing if any numers contain 2</p>
