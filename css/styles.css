@@ -1,14 +1,14 @@
-body{
-  text-align: center;
-}
 
 h1{
+  text-align: center;
   font-family:'Montserrat', sans-serif;
   font-weight:bold;
 }
 
 .jumbotron{
+  border:10px solid gray;
   margin-top:20px;
+  margin-bottom:0px;
   padding:40px;
 }
 
@@ -20,23 +20,26 @@ h1{
 }
 
 hr#printer{
-  margin:0;
+  margin:0px;
+  border:5px dashed black;
 }
 
 .terminalDisplay{
+  border: 10px solid gray;
   padding:20px;
   height: 600px;
   background-color:black;
-  color:green;
+  border-radius:20px;
+  color:lime;
 }
 
 .form-control , .form-control:focus {
   background-color:black;
-  color:green;
+  color:lime;
 }
 
 .form-control::placeholder {
-  color: green;
+  color:lime;
   opacity: 1;
 }
 

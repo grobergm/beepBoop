@@ -16,13 +16,12 @@
     <div class="container">
       <div class="jumbotron">
         <h1 class="display-1">Super-Computer</h1>
-        <div class="row">
-          <div class="terminalDisplay col">
+          <div class="terminalDisplay">
             <p id="greeting">Hello <span class="nameGoesHere">Please login to continue</span>!</p>
             <form id="userNameForm">
               <div class="form-row">
                 <div class="col">
-                  <input id="userNameInput" class="form-control" type="text" placeholder="Please Login with your name to get started">
+                  <input id="userNameInput" class="form-control" type="text" placeholder="Enter your name">
                 </div>
                 <div class="col">
                   <button class="btn btn-lg btn-danger btn-block" type="submit">Enter</button>
@@ -49,19 +48,17 @@
               <p>Boop.... Boop.....Boop.....</p>
               <p>Testing if any numers contain 1</p>
               <p>Beep, Beep, Beep!</p>
-              <p>Ok, <span class="nameGoesHere"></span>, I will printed the readout for you below...</p>
+              <p>Ok, <span class="nameGoesHere"></span>, I am printing the results <strong>Below this Super-Computer</strong></p>
             </div>
           </div>
-          <div class="col">
-            <hr id="printer">
-            <div id="printout">
-              <hr>
-              <p id="returnOutput"></p>
-              <hr>
-            </div>
-          </div>
+      </div>
+        <hr id="printer">
+        <div id="printout">
+          <p>Here is the result:</p>
+          <hr>
+          <p id="returnOutput"></p>
+          <hr>
         </div>
       </div>
-    </div>
   </body>
 </html>

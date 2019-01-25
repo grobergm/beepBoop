@@ -27,20 +27,22 @@ $(document).ready(function(){
   $("form#userNameForm").submit(function(event){
     event.preventDefault();
     inputedName= $("input#userNameInput").val();
-    $(".nameGoesHere").text(inputedName);
-    $("form#userNameForm").hide();
-    $("form#numberInputForm").show();
-
+    if(inputedName){
+      $(".nameGoesHere").text(inputedName);
+      $("form#userNameForm").hide();
+      $("form#numberInputForm").show();
+    }
   })
   $("form#numberInputForm").submit(function(event){
     $("#printout").hide();
+    $("#computerMessages").hide();
     event.preventDefault();
     var numberInput = $("input#numberInput").val();
     var beepBoopOutput = roboLooper(numberInput);
     $(".numberGoesHere").text(numberInput);
     $("#returnOutput").text(beepBoopOutput);
-    $("#computerMessages").slideDown(2000);
-    $("#printout").slideDown(4000);
+    $("#computerMessages").slideDown(4000);
+    $("#printout").delay(4000).slideDown(8000);
 
   })
 });
