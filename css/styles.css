@@ -17,3 +17,13 @@ hr{
   margin:0;
   height:2px;
 }
+
+.form-control , .form-control:focus {
+  background-color:black;
+  color:green;
+}
+
+.form-control::placeholder {
+  color: green;
+  opacity: 1;
+}
