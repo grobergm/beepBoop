@@ -1,9 +1,10 @@
 
 function roboLooper(number){
+  var realNumber= parseInt(number);
   var numberArray=[];
   var toTextArray=[];
-  for (var i=0;i<=number;i++){
-    numberArray.push(i);
+  for (var i=0;i<=realNumber;i++){
+    numberArray.push(i.toString());
   }
   numberArray.forEach(function(number){
     if(number.includes("3")){
@@ -19,6 +20,7 @@ function roboLooper(number){
 return toTextArray;
 }
 
+console.log(roboLooper("15"));
 
 
 $(document).ready(function(){
