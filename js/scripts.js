@@ -24,9 +24,12 @@ return outputText;
 
 $(document).ready(function(){
   $("form#numberInputForm").submit(function(event){
+    $("#printout").hide();
     event.preventDefault();
     var userInput = $("input#numberInput").val();
     var beepBoopOutput = roboLooper(userInput);
-    $("p#returnOutput").text(beepBoopOutput);
+    $("#returnOutput").text(beepBoopOutput);
+    $("#printout").slideDown(2500);
+
   })
 });

@@ -2,6 +2,18 @@ body{
   text-align: center;
 }
 
-p#returnOutput{
+h1{
+  font-family:'Montserrat', sans-serif;
+}
+
+#printout{
+  padding:20px;
+  background-color:white;
+  display:none;
   font-family: 'courier new';
+}
+
+hr{
+  margin:0;
+  height:2px;
 }
