@@ -16,10 +16,11 @@
     <div class="jumbotron">
       <h1 class="display-3"><em>Beep-Boop</em></h1>
       <div class="terminalDisplay">
+        <p id="greeting">Hello <span class="nameGoesHere">Please login to continue</span>!</p>
         <form id="userNameForm">
           <div class="form-row">
             <div class="col">
-              <input class="form-control" type="text" placeholder="Please Login with your name to get started">
+              <input id="userNameInput" class="form-control" type="text" placeholder="Please Login with your name to get started">
             </div>
             <div class="col">
               <button class="btn btn-lg btn-danger btn-block" type="submit">Enter</button>
@@ -36,16 +37,12 @@
             </div>
           </div>
         </form>
-        <p id="firstMessage">Working... Processing your input of </p>
-        <p id="secondMessage">Working</p>
       </div>
-      <hr>
+      <hr id="printer">
       <div id="printout">
-        <p id="computer message">Number Accepted</p><hr>
-        <p id="computer message">Working...</p><hr>
-        <p id="computer message">Working...</p><hr>
-        <p id="computer message">Here are the Results</p><hr>
+        <hr>
         <p id="returnOutput"></p>
+        <hr>
       </div>
     </div>
   </body>

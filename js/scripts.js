@@ -1,3 +1,4 @@
+var inputedName= "Dave";
 
 function roboLooper(number){
   var realNumber= parseInt(number);
@@ -8,7 +9,7 @@ function roboLooper(number){
   }
   numberArray.forEach(function(number){
     if(number.includes("3")){
-      toTextArray.push("I'm sorry, Dave. I'm afraid I can't do that.");
+      toTextArray.push(`I'm sorry, ${inputedName}. I'm afraid I can't do that.`);
     } else if(number.includes("2")){
       toTextArray.push("Boop");
     } else if(number.includes("1")){
@@ -23,6 +24,14 @@ return outputText;
 
 
 $(document).ready(function(){
+  $("form#userNameForm").submit(function(event){
+    event.preventDefault();
+    inputedName= $("input#userNameInput").val();
+    $(".nameGoesHere").text(inputedName);
+    $("form#userNameForm").hide();
+    $("form#numberInputForm").show();
+
+  })
   $("form#numberInputForm").submit(function(event){
     $("#printout").hide();
     event.preventDefault();
