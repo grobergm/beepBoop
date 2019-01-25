@@ -15,13 +15,11 @@ function roboLooper(number){
     } else {
       toTextArray.push(number);
     }
-
-
   })
-console.log(toTextArray);
+return toTextArray;
 }
 
-roboLooper(33);
+console.log(roboLooper(50));
 
 
 $(document).ready(function(){
