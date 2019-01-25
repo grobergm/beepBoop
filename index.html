@@ -13,51 +13,54 @@
     <script src="js/scripts.js"></script>
   </head>
   <body>
-    <div class="jumbotron">
-      <h1 class="display-3"><em>Beep-Boop</em></h1>
-      <div class="terminalDisplay">
-        <p id="greeting">Hello <span class="nameGoesHere">Please login to continue</span>!</p>
-        <form id="userNameForm">
-          <div class="form-row">
-            <div class="col">
-              <input id="userNameInput" class="form-control" type="text" placeholder="Please Login with your name to get started">
-            </div>
-            <div class="col">
-              <button class="btn btn-lg btn-danger btn-block" type="submit">Enter</button>
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-1">Super-Computer</h1>
+        <div class="row">
+          <div class="terminalDisplay col">
+            <p id="greeting">Hello <span class="nameGoesHere">Please login to continue</span>!</p>
+            <form id="userNameForm">
+              <div class="form-row">
+                <div class="col">
+                  <input id="userNameInput" class="form-control" type="text" placeholder="Please Login with your name to get started">
+                </div>
+                <div class="col">
+                  <button class="btn btn-lg btn-danger btn-block" type="submit">Enter</button>
+                </div>
+              </div>
+            </form>
+            <form id="numberInputForm">
+              <div class="form-row">
+                <div class="col">
+                  <input class="form-control" type="number" id="numberInput" placeholder='Please enter a number here:'>
+                </div>
+                <div class="col">
+                  <button class="btn btn-lg btn-danger btn-block" type="submit">Enter</button>
+                </div>
+              </div>
+            </form>
+            <div id="computerMessages">
+              <p>Thanks for entering <span class="numberGoesHere"></span>, <span class="nameGoesHere"></span></p>
+              <p>Initiating roboLooper program...</p>
+              <p>Pusing all valuse between 0 and <span class="numberGoesHere"></span> into an array...</p>
+              <p>Testing if any of those numbers contain 3</p>
+              <p>ERROR! I'm Sorry <span class="nameGoesHere"></span>, I'm afraid I can't do that.</p>
+              <p>Testing if any numers contain 2</p>
+              <p>Boop.... Boop.....Boop.....</p>
+              <p>Testing if any numers contain 1</p>
+              <p>Beep, Beep, Beep!</p>
+              <p>Ok, <span class="nameGoesHere"></span>, I will printed the readout for you below...</p>
             </div>
           </div>
-        </form>
-        <form id="numberInputForm">
-          <div class="form-row">
-            <div class="col">
-              <input class="form-control" type="number" id="numberInput" placeholder='Please enter a number here:'>
-            </div>
-            <div class="col">
-              <button class="btn btn-lg btn-danger btn-block" type="submit">Enter</button>
+          <div class="col">
+            <hr id="printer">
+            <div id="printout">
+              <hr>
+              <p id="returnOutput"></p>
+              <hr>
             </div>
           </div>
-        </form>
-        <div id="computerMessages">
-          <p>Thanks for entering <span class="numberGoesHere"></span>, <span class="nameGoesHere"></span></p>
-          <p>Initiating roboLooper program...</p>
-          <p>Pusing all valuse between 0 and <span class="numberGoesHere"></span> into an array...</p>
-          <p>Testing if any of those numbers contain 3</p>
-          <p>ERROR! I'm Sorry <span class="nameGoesHere"></span>, I'm afraid I can't do that.</p>
-          <p>Testing if any numers contain 2</p>
-          <p>Boop.... Boop.....Boop.....</p>
-          <p>Testing if any numers contain 1</p>
-          <p>Beep, Beep, Beep!</p>
-          <p>Ok, <span class="nameGoesHere"></span>, I will printed the readout for you below...</p>
         </div>
-
-        <p id="message1"></p>
-        <p id="message1"></p>
-      </div>
-      <hr id="printer">
-      <div id="printout">
-        <hr>
-        <p id="returnOutput"></p>
-        <hr>
       </div>
     </div>
   </body>

@@ -4,6 +4,12 @@ body{
 
 h1{
   font-family:'Montserrat', sans-serif;
+  font-weight:bold;
+}
+
+.jumbotron{
+  margin-top:20px;
+  padding:40px;
 }
 
 #printout{
@@ -19,6 +25,7 @@ hr#printer{
 
 .terminalDisplay{
   padding:20px;
+  height: 600px;
   background-color:black;
   color:green;
 }

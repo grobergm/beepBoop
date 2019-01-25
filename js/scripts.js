@@ -18,7 +18,7 @@ function roboLooper(number){
       toTextArray.push(number);
     }
   })
-var outputText = toTextArray.join(" ");
+var outputText = toTextArray.join(",");
 return outputText;
 }
 
@@ -39,8 +39,8 @@ $(document).ready(function(){
     var beepBoopOutput = roboLooper(numberInput);
     $(".numberGoesHere").text(numberInput);
     $("#returnOutput").text(beepBoopOutput);
-    $("#computerMessages").slideDown(4000);
-    $("#printout").slideDown(2000);
+    $("#computerMessages").slideDown(2000);
+    $("#printout").slideDown(4000);
 
   })
 });
