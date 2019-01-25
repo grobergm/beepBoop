@@ -8,7 +8,7 @@ h1{
 
 #printout{
   padding:20px;
-  background-color:white;
+  background-color:#e1e3dd;
   display:none;
   font-family: 'courier new';
 }
@@ -19,7 +19,6 @@ hr#printer{
 
 .terminalDisplay{
   padding:20px;
-  height:300px;
   background-color:black;
   color:green;
 }
@@ -40,4 +39,8 @@ form#numberInputForm{
 
 p#greeting{
   font-size:20px
+}
+
+#computerMessages{
+  display:none;
 }

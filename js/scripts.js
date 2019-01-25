@@ -35,10 +35,12 @@ $(document).ready(function(){
   $("form#numberInputForm").submit(function(event){
     $("#printout").hide();
     event.preventDefault();
-    var userInput = $("input#numberInput").val();
-    var beepBoopOutput = roboLooper(userInput);
+    var numberInput = $("input#numberInput").val();
+    var beepBoopOutput = roboLooper(numberInput);
+    $(".numberGoesHere").text(numberInput);
     $("#returnOutput").text(beepBoopOutput);
-    $("#printout").slideDown(2500);
+    $("#computerMessages").slideDown(4000);
+    $("#printout").slideDown(2000);
 
   })
 });
