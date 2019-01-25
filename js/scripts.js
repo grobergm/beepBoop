@@ -21,8 +21,6 @@ var outputText = toTextArray.join(" ");
 return outputText;
 }
 
-console.log(roboLooper("15"));
-
 
 $(document).ready(function(){
   $("form#numberInputForm").submit(function(event){
