@@ -16,26 +16,36 @@ Have you ever wanted a program print out a list of numbers up to any given numbe
 #### Main "business" Function
 
 1. Given an input number from a form, first this program will store all values from 0 to the number as strings in an array
-#### input: 5
-#### output: numberArray= ["0","1","2","3","4","5"]
+
+  **input:** 5
+  **output:** numberArray= ["0","1","2","3","4","5"]
+
 2. The program checks each item in the array, one at a time,  to see if they include the characters "3","2",or "1". For every item including "3", it will replace the item with the phrase "Sorry Dave, I can't do that right now.". For every item including "2" it will replace the item with "Boop", and for every item containing "1", it will replace the item with "Beep". For all other items, it will just print out the number.
-#### input: numberArray= ["0","1","2","3","4","5"]
-#### output: toTextArray= ["0","Beep","Boop","Im' sorry Dave...","4","5"]
+
+  **input:** numberArray= ["0","1","2","3","4","5"]
+  **output:** toTextArray= ["0","Beep","Boop","Im' sorry Dave...","4","5"]
+
 3. Since it checks for "3" first, then "2", then "1", they are prioritized in that order
-#### input: numberArray= [..."10","11","12","13","14","15"]
-#### output: toTextArray= ["10","Beep","Boop","Sorry Dave...","14","15"]
+
+  **input:** numberArray= [..."10","11","12","13","14","15"]
+  **output:** toTextArray= ["10","Beep","Boop","Sorry Dave...","14","15"]
+
 3. Lastly, the program will join the items in the toTextArray into a single string, which the function returns.
-#### input: toTextArray= ["0","Beep","Boop","I'm sorry Dave...","4","5"]
-#### output: "0, Beep, Boop, I'm sorry Dave..., 4, 5"
+
+  **input:** toTextArray= ["0","Beep","Boop","I'm sorry Dave...","4","5"]
+  **output:** "0, Beep, Boop, I'm sorry Dave..., 4, 5"
 
 #### User Interface Logic
-1. Use CSS to hide messages and forms until they are ready
+1. Use CSS to hide messages and forms until they are ready.
 2. Wait until the document is ready before adding event listeners.
 3. Add event listeners to submit buttons, so they can run their corresponding functions below.
 4. Get values from user name, then change the text wherever the class "nameGoesHere" is found in the js or html.
 5. Hide the user name form on submit, and show the number form, then store the value of the number on submit.
 6. Change the value of class "numberGoesHere" to the stored number.
-7. Run the main roboLooper function, to 
+7. Run the main roboLooper function using the stored number value as an argument, and store the returned string in a variable.
+8. Change the text with the "returnOutput" id to the varible storing the returned string.
+9. Display the messages from the "super-computer" as a slide-down effect.
+10. Wait until the computer messages are completed, then the messages slide-down to "print" the result below the "super-computer".
 
 ### Technologies Used
 * HTML
