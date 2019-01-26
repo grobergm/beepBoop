@@ -63,6 +63,7 @@ _This is a static website,_ so you only need to:
 
 #### Bugs
 * Not really a bug, but I added the userName variable into the global scope, so it could be reset given the users name, but also be used in my backend function.
+* When the browser is reduced to a small screen size, the text overflows off the edge of the "super-computer" and the "printout"--and thereby _shattering the carefully cultivated retro 80s vibe_
 * Also when a very large number is entered, sometimes the browser crashes out of _sheer frustration_... So I set a max of 10,000 and min of -10,000 on the number input.
 
 _Copyright 2019 Matt Groberg._
